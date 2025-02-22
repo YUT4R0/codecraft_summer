@@ -17,4 +17,4 @@ def subscribers_creator_valitador(request: any):
     response = body_validator.validate(request.json)
 
     if response is False:
-        print(body_validator.errors)
+        raise Exception(body_validator.errors)
