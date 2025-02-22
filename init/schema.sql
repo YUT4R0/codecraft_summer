@@ -5,7 +5,7 @@ CREATE TABLE Events (
 );
 
 -- create subcribers table
-CREATE TABLE Subcribers (
+CREATE TABLE Subscribers (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   userName TEXT NOT NULL,
   email TEXT NOT NULL,
