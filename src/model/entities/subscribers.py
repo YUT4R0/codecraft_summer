@@ -3,7 +3,7 @@ from sqlalchemy import Column, String, Integer, ForeignKey
 
 
 class Subscribers(Base):
-    __tablename__ = 'subscribers'
+    __tablename__ = "Subscribers"
 
     id = Column(Integer, primary_key=True)
     userName = Column(String, nullable=False)
