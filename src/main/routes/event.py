@@ -10,7 +10,7 @@ from src.model.repositories.events_repository import EventsRepository
 event_route_bp = Blueprint("event_route", __name__)
 
 
-@event_route_bp.route("/event", methods=["POST", "GET"])
+@event_route_bp.route("/event", methods=['POST'])
 def create_new_event():
     events_creator_valitador(request)
     http_request = HttpRequest(body=request.json)
