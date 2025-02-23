@@ -27,7 +27,7 @@ class EventsLinkCreator:
         new_link = self.__events_link_repo.insert(event_id, subscriber_id)
         return new_link
 
-    def __format_response(self, new_link: str, event_id: int, subscriber_id: str) -> HttpResponse:
+    def __format_response(self, new_link: str, event_id: int, subscriber_id: int) -> HttpResponse:
         return HttpResponse(
             body={
                 "data": {

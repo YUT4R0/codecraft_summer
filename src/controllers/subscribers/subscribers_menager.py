@@ -24,7 +24,7 @@ class SubscribersManager:
         for sub in subs:
             formated_subscriber.append(
                 {
-                    "userName": sub.name,
+                    "userName": sub.userName,
                     "email": sub.email
                 }
             )
@@ -36,7 +36,7 @@ class SubscribersManager:
                     "subscribers": formated_subscriber
                 }
             },
-            status_code=201
+            status_code=200
         )
 
     def __format_event_ranking(self, event_ranking: list) -> HttpResponse:
@@ -56,5 +56,5 @@ class SubscribersManager:
                     "ranking": formated_event_ranking
                 }
             },
-            status_code=201
+            status_code=200
         )
